@@ -1,0 +1,74 @@
+CREATE TABLE city_directory (
+    pid NUMBER PRIMARY KEY,
+    name VARCHAR2(50),
+    gender VARCHAR2(10),
+    occupation VARCHAR2(50),
+    area_code NUMBER,
+    phone_number NUMBER,
+    safety_status VARCHAR2(10),
+    address VARCHAR2(100),
+    date_of_birth DATE,
+    age NUMBER
+);
+
+-- Person with pid 1
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (1, 'nazukiro sato', 'male', 'police officer', 134, 23456789, 'safe', 'susukino St.18 - House No 235',DATE '1981-01-09', 41);
+
+-- Person with pid 2
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (2, 'aoi suzuki', 'female', 'chemist', 121, 83345388, 'safe', 'otaru canal St.19 - House No 124', DATE '1996-08-05', 25);
+
+-- Person with pid 3
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (3, 'haru ito', 'male', 'producer', 106, 92365978, 'safe', 'motomachi St.20 - House No 658', DATE '1983-10-19', 39);
+
+-- Person with pid 4
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (4, 'trishaomi tanaka', 'female', 'manufacturer', 106, 12567778, 'unsafe', 'tanukikoji St.21 - House No 889', DATE '1991-03-26', 31);
+
+-- Person with pid 5
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (5, 'nirajimoto takahashi', 'male', 'chemist', 134, 12370098, 'unsafe', 'asahikawa St.22 - House No 762', DATE '1986-08-14', 36);
+
+-- Person with pid 6
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (6, 'shrutiso yamada', 'female', 'chef', 121, 23945878, 'safe', 'otaru canal St.26 - House No 337', DATE '1990-03-07', 32);
+
+-- Person with pid 7
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (7, 'yashiko yoshida', 'male', 'trainer', 106, 92345778, 'unsafe', 'motomachi St.24 - House No 789', DATE '1995-10-11', 26);
+
+-- Person with pid 8
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (8, 'abuyren sasaki', 'male', 'chemist', 134, 82345878, 'unsafe', 'susukino St.14 - House No 606', DATE '1998-07-12', 23);
+
+-- Person with pid 9
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (9, 'adikoto matsumoto', 'male', 'chef', 134, 72347378, 'safe', 'asahikawa St.11 - House No 304', DATE '1984-06-29', 38);
+
+-- Person with pid 10
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (10, 'rushichan kiro', 'male', 'influencer', 121, 52647878, 'safe', 'motomachi St.13 - House No 424', DATE '1981-07-19', 40);
+
+-- Person with pid 11
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (11, 'tejanshinata kato', 'male', 'police officer', 145, 69344578, 'safe', 'tanukikoji St.16 - House No 101', DATE '1973-05-22', 49);
+
+-- Person with pid 12
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (12, 'kushariko nakamura', 'male', 'police officer', 134, 88345690, 'safe', 'otaru canal St.27 - House No 774', DATE '1975-01-15', 47);
+
+-- Person with pid 13
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (13, 'yumi kobayashi', 'female', 'police officer', 134, 88675690, 'safe', 'susukino St.28 - House No 325', DATE '1978-09-07', 44);
+
+-- Person with pid 14
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (14, 'yumi yamaguchi', 'female', 'detective', 121, 87870909, 'safe', 'asahikawa St.12 - House No 900', DATE '1988-06-30', 34);
+
+-- Person with pid 15
+INSERT INTO city_directory (pid, name, gender, occupation, area_code, phone_number, safety_status, address, date_of_birth, age)
+VALUES (15, 'tsunoda watanabe', 'male', 'racer', 145, 12345678, 'unsafe', 'motomachi St.23 - House No 500', DATE '1985-11-09', 37);
+
+select * from City_Directory

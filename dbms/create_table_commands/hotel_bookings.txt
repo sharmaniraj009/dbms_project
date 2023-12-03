@@ -1,0 +1,46 @@
+CREATE TABLE Hotel_bookings (
+    GuestID INT,
+    GuestName VARCHAR(255),
+    CheckinDate DATE,
+    CheckoutDate DATE,
+    HotelRoomNo VARCHAR(10),
+    DateOfBirth DATE,
+    Age INT,
+    PhoneNumber VARCHAR(20),
+    Email VARCHAR(255),
+    Address VARCHAR(255),
+    TotalCost INT
+);
+
+
+
+-- Haruki Yamamoto
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (549, 'Haruki Yamamoto', DATE '2023-11-18', DATE '2023-11-25', '205A', DATE '1998-07-12', 25, '+81 80 9876 5432', 'haruki.yamamoto@yahoo.com', 'st. - Sakura Avenue st. no. - 12 Rowhouse no. - 346 zipcode - 456-7890', 5000);
+
+-- Aiko Suzuki
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (213, 'Aiko Suzuki', DATE '2023-11-20', DATE '2023-11-24', '419B', DATE '1995-09-18', 28, '+81 70 5678 1234', 'aiko.suzuki@hotmail.com', 'st. - Cherry Blossom st. no. - 8 Rowhouse no. - 890 zipcode - 234-5678', 5500);
+
+-- Takashi Nakamura
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (732, 'Takashi Nakamura', DATE '2023-10-21', DATE '2023-10-23', '701C', DATE '1988-09-27', 35, '+81 80 2345 6789', 'takashi.nakamura@gmail.com', 'st. - Maple Street st. no. - 15 Rowhouse no. - 778 zipcode - 345-6789', 4500);
+
+-- Yukihiro Sato
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (896, 'Yukihiro Sato', DATE '2023-10-22', DATE '2023-10-26', '312X', DATE '1991-06-20', 32, '+81 90 8765 4321', 'yukihiro.sato@yahoo.com', 'st. - Pine Tree Road st. no. - 3 Rowhouse no. - 980 zipcode - 567-8901', 6500);
+
+-- Miyuki Honda
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (421, 'Miyuki Honda', DATE '2023-10-23', DATE '2023-10-27', '508H', DATE '1996-01-07', 27, '+81 70 1234 5678', 'miyuki.honda@hotmail.com', 'st. - Bamboo Lane st. no. - 7 Rowhouse no. - 998 zipcode - 678-9012', 7000);
+
+-- Rina Kobayashi
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (657, 'Rina Kobayashi', DATE '2023-10-24', DATE '2023-10-28', '624M', DATE '1983-11-19', 40, '+81 80 3456 7890', 'rina.kobayashi@gmail.com', 'st. - Plum Blossom Avenue st. no. - 10 Rowhouse no. - 666 zipcode - 789-0123', 8500);
+
+-- Sakura Tanaka
+INSERT INTO Hotel_bookings (GuestID, GuestName, CheckinDate, CheckoutDate, HotelRoomNo, DateOfBirth, Age, PhoneNumber, Email, Address, TotalCost)
+VALUES (871, 'Sakura Tanaka', DATE '2023-11-17', DATE '2023-11-22', '109P', DATE '1993-12-13', 30, '+81 90 1234 5678', 'sakura.tanaka@gmail.com', 'st. - Plum Bamboo Lane st. no. - 23 Rowhouse no. - 658 zipcode - 896-2346', 7500);
+
+
+select  * from Hotel_Bookings

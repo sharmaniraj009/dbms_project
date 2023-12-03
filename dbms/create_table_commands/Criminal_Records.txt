@@ -1,0 +1,39 @@
+CREATE TABLE criminal_records (
+    CriminalID INT,
+    FirstName VARCHAR(255),
+    LastName VARCHAR(255),
+    Gender VARCHAR(10),
+    StreetName VARCHAR(255),
+    StreetNo INT,
+    RowHouseNo INT,
+    PhoneNumber VARCHAR(20),
+    DateOfBirth DATE,
+    CriminalRecord VARCHAR(255),
+    DateOfArrest DATE,
+    PlaceOfArrest VARCHAR(255),
+    IncidentID INT,
+    ReleaseDate DATE,
+    IdentificationMark VARCHAR(255)
+);
+
+-- Criminal 1
+INSERT INTO criminal_records (CriminalID, FirstName, LastName, Gender, StreetName, StreetNo, RowHouseNo, PhoneNumber, DateOfBirth, CriminalRecord, DateOfArrest, PlaceOfArrest, IncidentID, ReleaseDate, IdentificationMark)
+VALUES (174, 'Nirajimoto', 'Takahashi', 'male', 'Asahikawa', 22, 762, '12370098', DATE '1986-08-14', 'Charged for selling narcotics', DATE '2011-11-29', 'Otaru Canal', 435, DATE '2019-10-18', 'Birthmark on the left foot');
+
+-- Criminal 2
+INSERT INTO criminal_records (CriminalID, FirstName, LastName, Gender, StreetName, StreetNo, RowHouseNo, PhoneNumber, DateOfBirth, CriminalRecord, DateOfArrest, PlaceOfArrest, IncidentID, ReleaseDate, IdentificationMark)
+VALUES (106, 'Nirajimoto', 'Takahashi', 'male', 'Asahikawa', 22, 762, '12370098', DATE '1986-08-14', 'Charged for insider trading', DATE '2014-12-18', 'Motomachi', 892, DATE '2017-12-12', 'Stitch scar above the left eye');
+
+-- Criminal 3
+INSERT INTO criminal_records (CriminalID, FirstName, LastName, Gender, StreetName, StreetNo, RowHouseNo, PhoneNumber, DateOfBirth, CriminalRecord, DateOfArrest, PlaceOfArrest, IncidentID, ReleaseDate, IdentificationMark)
+VALUES (108, 'Trishaomi', 'Tanaka', 'female', 'Tanukikoji', 21, 889, '12567778', DATE '1991-03-26', 'Charged for making fake passport', DATE '2008-08-06', 'Otaru Canal', 761, DATE '2013-09-15', 'A big mole at the middle of the nose');
+
+-- Criminal 4
+INSERT INTO criminal_records (CriminalID, FirstName, LastName, Gender, StreetName, StreetNo, RowHouseNo, PhoneNumber, DateOfBirth, CriminalRecord, DateOfArrest, PlaceOfArrest, IncidentID, ReleaseDate, IdentificationMark)
+VALUES (498, 'Tsunoda', 'Watanabe', 'male', 'Motomachi', 23, 500, '12345678', DATE '1985-11-09', 'Charged for robbery', DATE '2020-10-28', 'Tanukikoji', 484, DATE '2021-06-16', 'Stitch scar on the left thigh');
+
+-- Criminal 5
+INSERT INTO criminal_records (CriminalID, FirstName, LastName, Gender, StreetName, StreetNo, RowHouseNo, PhoneNumber, DateOfBirth, CriminalRecord, DateOfArrest, PlaceOfArrest, IncidentID, ReleaseDate, IdentificationMark)
+VALUES (498, 'Abhyuren', 'Sasaki', 'male', 'Susukino', 14, 491, '82345878', DATE '1998-07-12', 'Charged for smuggling unsafe drugs', DATE '2011-11-28', 'Suskino', 664, DATE '2023-11-18', 'Eagle tattoo at the back of the neck');
+
+select * from criminal_records

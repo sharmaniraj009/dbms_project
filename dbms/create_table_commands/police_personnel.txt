@@ -1,0 +1,29 @@
+-- Create the police_personnel table
+CREATE TABLE police_personnel (
+    officer_id NUMBER PRIMARY KEY,
+    first_name VARCHAR2(50),
+    last_name VARCHAR2(50),
+    gender VARCHAR2(10),
+    email_id VARCHAR2(100),
+    badge_number NUMBER,
+    awards VARCHAR2(50),
+    address VARCHAR2(150)
+);
+
+-- Insert data into the police_personnel table
+INSERT INTO police_personnel (officer_id, first_name, last_name, gender, email_id, badge_number, awards, address)
+VALUES (4567, 'Nazukiro', 'Sato', 'male', 'nazukiro.s@policedepartment.co', 12345, 'Humanitarian Service Ribbon', 'Susukino St.18 - House No 235');
+
+INSERT INTO police_personnel (officer_id, first_name, last_name, gender, email_id, badge_number, awards, address)
+VALUES (6789, 'Tejanshinata', 'Kato', 'male', 'tejanshinata.k@policedepartment.co', 23456, 'Crime Fighter of the Month', 'Tanukikoji St.16 - House No 101');
+
+INSERT INTO police_personnel (officer_id, first_name, last_name, gender, email_id, badge_number, awards, address)
+VALUES (3456, 'Kushariko', 'Nakamura', 'male', 'kushariko.n@policedepartment.co', 34567, 'Special Operations Commendation', 'Otaru Canal St.27 - House No 774');
+
+INSERT INTO police_personnel (officer_id, first_name, last_name, gender, email_id, badge_number, awards, address)
+VALUES (1234, 'Suzume', 'Kobayashi', 'female', 'suzume.k@policedepartment.co', 45678, 'Crime Prevention Achievement Award', 'Susukino St.28 - House No 325');
+
+INSERT INTO police_personnel (officer_id, first_name, last_name, gender, email_id, badge_number, awards, address)
+VALUES (7689, 'Yumi', 'Yamaguchi', 'female', 'yumi.y@policedepartment.co', 74374, 'Detective of the Country', 'Asahikawa St.90 - House No 758');
+
+select * from police_personnel

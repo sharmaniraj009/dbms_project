@@ -1,0 +1,37 @@
+-- Create the forensic_report table
+CREATE TABLE forensic_report (
+    chemical_name VARCHAR2(50),
+    classified VARCHAR2(50),
+    color VARCHAR2(50),
+    chemical_id NUMBER PRIMARY KEY,
+    chemical_license_no VARCHAR2(50),
+    molecular_weight VARCHAR2(20),
+    atomic_number NUMBER
+);
+
+-- Insert data into the forensic_report table
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('methanol', 'combustible', 'blue', 1001, 'E-980', '32.04 g/mol', 15);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('propane', 'combustible', 'blue', 1002, 'B-766', '44.10 g/mol', 26);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('butane', 'combustible', 'yellow', 1003, 'R-111', '58.12 g/mol', 34);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('acetone', 'combustible', 'white', 1004, 'U-565', '58.08 g/mol', 31);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('krypton', 'non combustible', 'green', 1005, 'N-999', '83.80 g/mol', 36);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('xenon', 'non combustible', 'green', 1006, 'T-966', '131.29 g/mol', 54);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('helium', 'non combustible', 'white', 1007, 'J-400', '4.00 g/mol', 2);
+
+INSERT INTO forensic_report (chemical_name, classified, color, chemical_id, chemical_license_no, molecular_weight, atomic_number)
+VALUES ('argon', 'non combustible', 'red', 1008, 'F-109', '39.95 g/mol', 18);
+
+select * from forensic_report
